@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tainá Batista · Enfermeira Esteta — Furo Humanizado em Bebês</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gold:        #C9973A;
+  --gold-light:  #E8C97A;
+  --gold-pale:   #F5ECD8;
+  --gold-faint:  #FBF6EE;
+  --gold-dark:   #8A6420;
+  --gold-deeper: #5C4010;
+  --ivory:       #FDFAF5;
+  --cream:       #F7F2EA;
+  --warm-white:  #FFFEF9;
+  --charcoal:    #1C1712;
+  --dark:        #2C241A;
+  --muted:       #7A6E5F;
+  --muted-light: #A89E8F;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans:  'Jost', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--dark);
+  background: var(--cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: 780px; margin: 0 auto; padding: 0 28px; }
+
+/* ── NAV ── */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(253,250,245,0.95);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(201,151,58,0.15);
+  padding: 0 28px;
+}
+.nav-inner {
+  max-width: 780px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px; gap: 16px;
+}
+.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.nav-logo-mark {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.nav-logo-mark svg { width: 18px; height: 18px; }
+.nav-logo-text { line-height: 1.2; }
+.nav-logo-name {
+  font-family: var(--serif); font-size: 17px; font-weight: 400;
+  color: var(--gold); display: block; letter-spacing: 0.03em;
+}
+.nav-logo-sub {
+  font-family: var(--sans); font-size: 10px; font-weight: 300;
+  letter-spacing: 2px; text-transform: uppercase; color: var(--muted); display: block;
+}
+.nav-cta {
+  background: transparent; color: var(--gold-dark);
+  font-family: var(--sans); font-size: 12px; font-weight: 500;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 9px 22px; border-radius: 50px; text-decoration: none;
+  border: 1px solid var(--gold); transition: background 0.2s, color 0.2s; white-space: nowrap;
+}
+.nav-cta:hover { background: var(--gold); color: white; }
+
+/* ── HERO INTRO (seção de entrada centrada) ── */
+.hero-intro {
+  background: var(--warm-white);
+  padding: 80px 28px 72px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(201,151,58,0.1);
+}
+.hero-intro-ring {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%; pointer-events: none;
+}
+.hero-intro-ring-1 { width: 560px; height: 560px; border: 1px solid rgba(201,151,58,0.06); }
+.hero-intro-ring-2 { width: 780px; height: 780px; border: 1px solid rgba(201,151,58,0.035); }
+.hero-intro-inner { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
+
+.hero-logo-circle {
+  width: 72px; height: 72px; border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 14px;
+}
+.hero-logo-circle svg { width: 36px; height: 36px; }
+.hero-logo-name {
+  font-family: var(--serif); font-size: 22px; font-weight: 400;
+  color: var(--gold); letter-spacing: 0.05em; display: block; margin-bottom: 4px;
+}
+.hero-logo-role {
+  font-family: var(--sans); font-size: 10px; font-weight: 300;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--muted);
+}
+.divider-thin {
+  width: 180px; height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold) 30%, var(--gold-light) 50%, var(--gold) 70%, transparent);
+  margin: 32px auto 28px;
+  position: relative;
+}
+.divider-thin::after {
+  content: '';
+  position: absolute;
+  bottom: -6px; left: 50%;
+  transform: translateX(-50%);
+  width: 100px; height: 6px;
+  background: radial-gradient(ellipse at center, rgba(201,151,58,0.28) 0%, transparent 75%);
+  filter: blur(2px);
+  border-radius: 50%;
+}
+.hero-intro h1 {
+  font-family: var(--serif);
+  font-size: clamp(36px, 6.5vw, 56px);
+  font-weight: 300; line-height: 1.12; color: var(--charcoal);
+  margin-bottom: 20px; letter-spacing: -0.01em;
+}
+.hero-intro h1 em { font-style: italic; color: var(--gold); }
+.hero-sub {
+  font-size: 16px; font-weight: 300; color: var(--muted);
+  line-height: 1.8; max-width: 480px; margin: 0 auto 40px;
+}
+.btn-primary {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  background: var(--gold); color: white;
+  font-family: var(--sans); font-size: 13px; font-weight: 500;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 18px 44px; border-radius: 50px; text-decoration: none; border: none; cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  width: 100%; max-width: 360px;
+  box-shadow: 0 4px 28px rgba(201,151,58,0.28);
+}
+.btn-primary:hover {
+  background: var(--gold-dark); transform: translateY(-2px);
+  box-shadow: 0 8px 36px rgba(201,151,58,0.38);
+}
+.hero-micro {
+  margin-top: 16px; font-size: 11px; font-weight: 300;
+  letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted-light);
+  display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;
+}
+.hero-micro span { display: flex; align-items: center; gap: 6px; }
+.hero-micro span::before {
+  content: ''; width: 4px; height: 4px; border-radius: 50%;
+  background: var(--gold-light); flex-shrink: 0;
+}
+
+/* ── HERO SPLIT (foto + bio da profissional) ── */
+.hero-split-section {
+  background: var(--cream);
+  overflow: hidden;
+}
+.hero-split {
+  display: flex;
+  align-items: stretch;
+  min-height: 560px;
+}
+.hero-photo-col {
+  flex: 0 0 45%;
+  position: relative;
+  overflow: hidden;
+}
+.hero-photo-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+}
+.hero-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.hero-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10,7,5,0) 0%,
+    rgba(10,7,5,0.25) 100%
+  );
+  pointer-events: none;
+}
+.hero-content-col {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 48px;
+  background: var(--warm-white);
+  border-left: 1px solid rgba(201,151,58,0.12);
+}
+.hero-bio {
+  max-width: 400px;
+}
+.hero-bio-label {
+  display: block;
+  font-family: var(--sans); font-size: 10px; font-weight: 400;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--gold);
+  margin-bottom: 12px;
+}
+.hero-bio-greeting {
+  font-family: var(--serif);
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 300; line-height: 1.18; color: var(--charcoal);
+  margin-bottom: 20px;
+}
+.hero-bio-greeting em { font-style: italic; color: var(--gold); }
+.hero-bio-divider {
+  width: 60px; height: 1.5px;
+  background: linear-gradient(to right, var(--gold), var(--gold-light));
+  margin-bottom: 22px;
+}
+.hero-bio-text {
+  font-size: 15px; font-weight: 300; color: var(--muted);
+  line-height: 1.85;
+}
+.hero-bio-stats {
+  display: flex; gap: 24px; margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(201,151,58,0.12);
+}
+.hero-bio-stat-num {
+  font-family: var(--serif); font-size: 30px; font-weight: 300; color: var(--gold); line-height: 1;
+  display: block; margin-bottom: 4px;
+}
+.hero-bio-stat-label {
+  font-size: 11px; font-weight: 300; letter-spacing: 1px; text-transform: uppercase; color: var(--muted);
+}
+
+/* ── ORNAMENT ── */
+.ornament-divider {
+  display: flex; align-items: center; justify-content: center;
+  gap: 12px; padding: 28px 0; background: var(--cream);
+}
+.ornament-divider .line { flex: 1; max-width: 100px; height: 1px; background: rgba(201,151,58,0.18); }
+.ornament-divider .diamond { width: 6px; height: 6px; background: var(--gold-light); transform: rotate(45deg); }
+.ornament-divider .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(201,151,58,0.3); }
+
+/* ── SECTIONS ── */
+section { padding: 76px 0; }
+section.white { background: var(--warm-white); }
+section.tinted { background: var(--gold-faint); }
+
+.section-label {
+  display: block; font-family: var(--sans); font-size: 10px; font-weight: 400;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+}
+.section-title {
+  font-family: var(--serif); font-size: clamp(28px, 4.5vw, 42px);
+  font-weight: 300; line-height: 1.2; color: var(--charcoal); margin-bottom: 20px;
+}
+.section-title em { font-style: italic; color: var(--gold); }
+.section-body {
+  font-size: 15px; font-weight: 300; color: var(--muted); line-height: 1.85; max-width: 540px;
+}
+
+/* ── PAIN ── */
+.pain-list { list-style: none; margin-top: 32px; }
+.pain-item {
+  display: flex; align-items: flex-start; gap: 20px;
+  padding: 22px 0; border-bottom: 1px solid rgba(201,151,58,0.1);
+}
+.pain-item:last-child { border-bottom: none; }
+.pain-num {
+  font-family: var(--serif); font-size: 30px; font-weight: 300;
+  color: #8A6420; flex-shrink: 0; line-height: 1; width: 36px;
+}
+.pain-text { font-size: 15px; font-weight: 300; color: var(--dark); line-height: 1.7; padding-top: 6px; }
+
+/* ── BENEFITS ── */
+.benefit-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; margin-top: 36px; }
+.benefit-card {
+  background: var(--warm-white); border-radius: 12px; padding: 28px 24px;
+  border: 1px solid rgba(201,151,58,0.15); transition: transform 0.2s, box-shadow 0.2s;
+}
+.benefit-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(201,151,58,0.1); }
+.benefit-num {
+  font-family: var(--serif); font-size: 46px; font-weight: 300;
+  color: var(--gold); line-height: 1; margin-bottom: 10px;
+}
+.benefit-label { font-size: 13px; font-weight: 500; color: var(--dark); margin-bottom: 6px; display: block; }
+.benefit-desc { font-size: 13px; font-weight: 300; color: var(--muted); line-height: 1.65; }
+
+/* ── STEPS ── */
+.steps { margin-top: 36px; }
+.step { display: flex; gap: 24px; padding: 26px 0; border-bottom: 1px solid rgba(201,151,58,0.1); }
+.step:last-child { border-bottom: none; }
+.step-left { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; }
+.step-circle {
+  width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif); font-size: 18px; font-weight: 300; color: var(--gold-dark);
+  background: var(--gold-faint); flex-shrink: 0;
+}
+.step-connector {
+  width: 1px; flex: 1; min-height: 16px;
+  background: linear-gradient(to bottom, rgba(201,151,58,0.3), transparent); margin-top: 8px;
+}
+.step:last-child .step-connector { display: none; }
+.step-content { padding-top: 10px; }
+.step-content h3 { font-size: 15px; font-weight: 500; color: var(--charcoal); margin-bottom: 8px; }
+.step-content p { font-size: 14px; font-weight: 300; color: var(--muted); line-height: 1.75; }
+
+/* ── WHO ── */
+.who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 36px; }
+.who-card { border-radius: 12px; padding: 28px 22px; }
+.who-card.yes { background: #F4F9EE; border: 1px solid rgba(99,153,34,0.14); }
+.who-card.no  { background: #FBF2F0; border: 1px solid rgba(180,60,50,0.1); }
+.who-card-title { font-size: 10px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 18px; }
+.who-card.yes .who-card-title { color: #3B6D11; }
+.who-card.no  .who-card-title { color: #8B3020; }
+.who-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.who-list li { font-size: 13px; font-weight: 300; line-height: 1.55; display: flex; gap: 10px; align-items: flex-start; }
+.who-list li::before { flex-shrink: 0; font-size: 12px; margin-top: 1px; }
+.who-card.yes .who-list li { color: #2A500D; }
+.who-card.yes .who-list li::before { content: '✓'; color: #3B6D11; }
+.who-card.no  .who-list li { color: #6B2818; }
+.who-card.no  .who-list li::before { content: '×'; color: #8B3020; }
+
+/* ── PRICING ── */
+.pricing-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; margin-top: 36px; }
+.pricing-card {
+  background: var(--warm-white); border-radius: 12px; padding: 32px 28px;
+  border: 1px solid rgba(201,151,58,0.15); transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+.pricing-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(201,151,58,0.1); }
+.pricing-card.featured {
+  border: 2px solid var(--gold);
+  background: var(--gold-faint);
+}
+.pricing-badge {
+  position: absolute; top: -12px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold); color: white;
+  font-size: 9px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase;
+  padding: 5px 14px; border-radius: 50px;
+}
+.pricing-title {
+  font-family: var(--sans); font-size: 11px; font-weight: 500;
+  letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold);
+  margin-bottom: 12px; text-align: center;
+}
+.pricing-value {
+  font-family: var(--serif); font-size: 48px; font-weight: 300;
+  color: var(--charcoal); line-height: 1; text-align: center; margin-bottom: 8px;
+}
+.pricing-value small { font-size: 20px; color: var(--muted); }
+.pricing-desc {
+  font-size: 13px; font-weight: 300; color: var(--muted);
+  line-height: 1.65; text-align: center; margin-bottom: 20px;
+}
+.pricing-features {
+  list-style: none; display: flex; flex-direction: column; gap: 8px;
+  padding-top: 20px; border-top: 1px solid rgba(201,151,58,0.1);
+}
+.pricing-features li {
+  font-size: 12px; font-weight: 300; color: var(--dark);
+  display: flex; gap: 8px; align-items: flex-start;
+}
+.pricing-features li::before {
+  content: '✓'; color: var(--gold); flex-shrink: 0; font-weight: 500;
+}
+
+/* ── RESULTS CAROUSEL ── */
+.results-carousel-container {
+  position: relative;
+  max-width: 660px;
+  margin: 40px auto 0;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--warm-white);
+  border: 1px solid rgba(201,151,58,0.15);
+  box-shadow: 0 8px 32px rgba(201,151,58,0.08);
+}
+.results-carousel-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.22,1,0.36,1);
+}
+.results-slide {
+  min-width: 100%;
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.results-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.results-slide-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+  color: white;
+}
+.results-slide-label {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 4px;
+}
+.results-slide-title {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.9);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  z-index: 10;
+  color: var(--gold-dark);
+  font-size: 20px;
+  font-weight: 300;
+}
+.carousel-nav:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.08);
+}
+.carousel-nav.prev { left: 16px; }
+.carousel-nav.next { right: 16px; }
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+  background: var(--warm-white);
+}
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(201,151,58,0.2);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  padding: 0;
+}
+.carousel-dot.active {
+  background: var(--gold);
+  transform: scale(1.25);
+}
+
+/* ── FAQ ── */
+.faq { margin-top: 36px; }
+.faq-item { border-bottom: 1px solid rgba(201,151,58,0.1); }
+.faq-item:first-child { border-top: 1px solid rgba(201,151,58,0.1); }
+.faq-toggle {
+  width: 100%; background: none; border: none; text-align: left; padding: 22px 0; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  font-family: var(--sans); font-size: 15px; font-weight: 400; color: var(--dark); transition: color 0.2s;
+}
+.faq-toggle:hover { color: var(--gold-dark); }
+.faq-icon {
+  flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%;
+  border: 1px solid rgba(201,151,58,0.35);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold); font-size: 20px; font-weight: 300;
+  transition: transform 0.25s, background 0.2s, border-color 0.2s; line-height: 1;
+}
+.faq-item.open .faq-icon { transform: rotate(45deg); background: var(--gold); border-color: var(--gold); color: white; }
+.faq-body { overflow: hidden; max-height: 0; transition: max-height 0.35s ease; }
+.faq-body p { padding: 0 0 22px; font-size: 14px; font-weight: 300; color: var(--muted); line-height: 1.85; }
+.faq-item.open .faq-body { max-height: 300px; }
+
+/* ── INFO GRID ── */
+.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 36px; }
+.info-card {
+  background: var(--warm-white); border-radius: 12px; padding: 28px 24px;
+  border: 1px solid rgba(201,151,58,0.13);
+}
+.info-card-icon { font-size: 22px; margin-bottom: 14px; display: block; }
+.info-card h3 {
+  font-family: var(--sans); font-size: 10px; font-weight: 500;
+  letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+}
+.info-card p, .info-card address {
+  font-size: 13px; font-weight: 300; color: var(--muted); line-height: 1.9; font-style: normal;
+}
+.info-card a { color: var(--gold-dark); text-decoration: none; border-bottom: 1px solid rgba(201,151,58,0.25); }
+.info-card a:hover { color: var(--gold); border-color: var(--gold); }
+.info-strong { color: var(--dark); font-weight: 500; }
+
+/* ── CTA FINAL ── */
+.cta-final {
+  background: var(--charcoal); color: white;
+  padding: 100px 28px; text-align: center; position: relative; overflow: hidden;
+}
+.cta-final::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 55% 50% at 20% 50%, rgba(201,151,58,0.08) 0%, transparent 65%),
+    radial-gradient(ellipse 45% 40% at 80% 50%, rgba(201,151,58,0.05) 0%, transparent 65%);
+  pointer-events: none;
+}
+.cta-final-ring {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  width: 700px; height: 700px; border-radius: 50%;
+  border: 1px solid rgba(201,151,58,0.06); pointer-events: none;
+}
+.cta-final-inner { position: relative; z-index: 1; max-width: 540px; margin: 0 auto; }
+.cta-final-logo-circle {
+  width: 56px; height: 56px; border-radius: 50%;
+  border: 1px solid rgba(201,151,58,0.4);
+  display: flex; align-items: center; justify-content: center; margin: 0 auto 28px;
+}
+.cta-final-logo-circle svg { width: 28px; height: 28px; }
+.cta-final h2 {
+  font-family: var(--serif); font-size: clamp(30px, 5.5vw, 48px);
+  font-weight: 300; line-height: 1.18; margin-bottom: 16px; color: #FAF4EA;
+}
+.cta-final h2 em { font-style: italic; color: var(--gold-light); }
+.cta-final p {
+  font-size: 15px; font-weight: 300; color: rgba(255,255,255,0.5);
+  line-height: 1.8; margin-bottom: 36px;
+}
+.cta-final .btn-primary { max-width: 380px; }
+.cta-final-micro {
+  margin-top: 18px; font-size: 11px; font-weight: 300;
+  letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.25);
+  display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #110D0A; color: rgba(255,255,255,0.3);
+  padding: 40px 28px; font-size: 12px; font-weight: 300; line-height: 2; text-align: center;
+}
+.footer-inner { max-width: 480px; margin: 0 auto; }
+.footer-logo { font-family: var(--serif); font-size: 19px; font-weight: 400; color: rgba(201,151,58,0.6); letter-spacing: 0.05em; margin-bottom: 2px; }
+.footer-role { font-size: 9px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.2); margin-bottom: 16px; }
+footer a { color: rgba(201,151,58,0.5); text-decoration: none; transition: color 0.2s; }
+footer a:hover { color: var(--gold); }
+.footer-divider { width: 40px; height: 1px; background: rgba(201,151,58,0.2); margin: 20px auto; }
+.footer-note { font-size: 10px; color: rgba(255,255,255,0.15); line-height: 1.7; margin-top: 16px; }
+
+/* ── FLOATING WA ── */
+.wa-float {
+  position: fixed; bottom: 28px; right: 24px; z-index: 200;
+  background: #25D366; color: white; border-radius: 50px;
+  padding: 14px 22px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px;
+  text-decoration: none; display: flex; align-items: center; gap: 10px;
+  box-shadow: 0 4px 24px rgba(37,211,102,0.32);
+  transition: transform 0.2s, box-shadow 0.2s; font-family: var(--sans);
+}
+.wa-float:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(37,211,102,0.42); }
+.wa-float svg { width: 20px; height: 20px; fill: white; flex-shrink: 0; }
+
+/* ── ANIMATION ── */
+@keyframes logoLand {
+  0%   { opacity: 0; transform: translateY(-90px) scale(0.85); filter: drop-shadow(0 0px 0px rgba(201,151,58,0)); }
+  60%  { opacity: 1; transform: translateY(10px) scale(1.03);  filter: drop-shadow(0 18px 24px rgba(201,151,58,0.32)); }
+  78%  { transform: translateY(-5px) scale(0.99);              filter: drop-shadow(0 6px 10px rgba(201,151,58,0.18)); }
+  90%  { transform: translateY(3px) scale(1.01);               filter: drop-shadow(0 12px 18px rgba(201,151,58,0.24)); }
+  100% { opacity: 1; transform: translateY(0) scale(1);        filter: drop-shadow(0 8px 16px rgba(201,151,58,0.18)); }
+}
+@keyframes shadowPulse {
+  0%   { opacity: 0; transform: translateX(-50%) scaleX(0.2); }
+  60%  { opacity: 1; transform: translateX(-50%) scaleX(1.1); }
+  80%  { transform: translateX(-50%) scaleX(0.85); }
+  100% { opacity: 0.7; transform: translateX(-50%) scaleX(1); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.hero-logo-circle {
+  animation: logoLand 1.1s cubic-bezier(0.22,1,0.36,1) both;
+}
+.logo-shadow {
+  display: block;
+  width: 160px; height: 14px;
+  background: radial-gradient(ellipse at center, rgba(201,151,58,0.35) 0%, transparent 72%);
+  margin: -8px auto 0;
+  animation: shadowPulse 1.1s cubic-bezier(0.22,1,0.36,1) both;
+  border-radius: 50%;
+  filter: blur(3px);
+}
+.hero-intro-inner .divider-thin,
+.hero-intro-inner h1,
+.hero-intro-inner .hero-sub,
+.hero-intro-inner .btn-primary,
+.hero-intro-inner .hero-micro {
+  animation: fadeUp 0.6s ease both;
+}
+.hero-intro-inner .divider-thin  { animation-delay: 0.55s; }
+.hero-intro-inner h1             { animation-delay: 0.70s; }
+.hero-intro-inner .hero-sub      { animation-delay: 0.80s; }
+.hero-intro-inner .btn-primary   { animation-delay: 0.90s; }
+.hero-intro-inner .hero-micro    { animation-delay: 1.00s; }
+
+.hero-photo-col { animation: slideInLeft 0.9s cubic-bezier(0.22,1,0.36,1) 0.3s both; }
+.hero-content-col { animation: slideInRight 0.9s cubic-bezier(0.22,1,0.36,1) 0.3s both; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 700px) {
+  .hero-split { flex-direction: column; }
+  .hero-photo-col { flex: none; width: 100%; height: 320px; }
+  .hero-photo-wrap { min-height: 320px; }
+  .hero-content-col { padding: 40px 28px; border-left: none; border-top: 1px solid rgba(201,151,58,0.12); }
+  .hero-bio-stats { gap: 16px; }
+  .benefit-grid { grid-template-columns: 1fr; }
+  .who-grid { grid-template-columns: 1fr; }
+  .info-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .wa-float span { display: none; }
+  .wa-float { padding: 14px; border-radius: 50%; }
+  
+  /* Carrossel responsivo */
+  .carousel-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+  .carousel-nav.prev { left: 8px; }
+  .carousel-nav.next { right: 8px; }
+  .results-slide-overlay {
+    padding: 14px;
+  }
+  .results-slide-label {
+    font-size: 9px;
+  }
+  .results-slide-title {
+    font-size: 16px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">
+      <div class="nav-logo-mark">
+        <img src="logo_taina_batista_otimizada.jpg" alt="Tainá Batista Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+      </div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Tainá Batista</span>
+        <span class="nav-logo-sub">Enfermeira Esteta</span>
+      </div>
+    </a>
+    <a href="https://wa.me/5563992726110" class="nav-cta">Agendar →</a>
+  </div>
+</nav>
+
+<!-- HERO INTRO: Seção de entrada centrada -->
+<header>
+  <div class="hero-intro">
+    <div class="hero-intro-ring hero-intro-ring-1"></div>
+    <div class="hero-intro-ring hero-intro-ring-2"></div>
+    <div class="hero-intro-inner">
+      <div class="hero-logo-circle">
+        <img src="logo_taina_batista_otimizada.jpg" alt="Tainá Batista Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+      </div>
+      <span class="hero-logo-name">Tainá Batista</span>
+      <span class="hero-logo-role">Enfermeira Esteta · Palmas, TO</span>
+      <span class="logo-shadow"></span>
+      <div class="divider-thin"></div>
+      <h1>Furo humanizado <em>para bebês</em><br>com segurança e carinho</h1>
+      <p class="hero-sub">Procedimento realizado por enfermeira especialista, com técnica adequada, materiais estéreis e joias hipoalergênicas — priorizando o bem-estar do seu bebê.</p>
+      <a href="https://wa.me/5563992726110" class="btn-primary">Agendar agora →</a>
+      <div class="hero-micro">
+        <span>Técnica humanizada</span>
+        <span>Sem dor</span>
+        <span>Palmas, TO</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SPLIT: Foto + Bio da profissional -->
+  <div class="hero-split-section">
+    <div class="hero-split">
+      <div class="hero-photo-col">
+        <div class="hero-photo-wrap">
+          <img src="foto-taina.jpg" alt="Tainá Batista — Enfermeira Esteta especialista em furo humanizado de bebês">
+          <div class="hero-photo-overlay"></div>
+        </div>
+      </div>
+      <div class="hero-content-col">
+        <div class="hero-bio">
+          <span class="hero-bio-label">A profissional</span>
+          <h2 class="hero-bio-greeting">Prazer, me chamo <em>Tainá</em></h2>
+          <div class="hero-bio-divider"></div>
+          <p class="hero-bio-text">Sou enfermeira e pós-graduada em estética, especialista em furo de orelha humanizado para bebês. Realizo cada procedimento com cuidado, técnica adequada e todo o acolhimento que sua família merece neste momento tão especial.</p>
+          <div class="hero-bio-stats">
+            <div>
+              <span class="hero-bio-stat-num">Seg.</span>
+              <span class="hero-bio-stat-label">Técnica humanizada</span>
+            </div>
+            <div>
+              <span class="hero-bio-stat-num">Pós</span>
+              <span class="hero-bio-stat-label">Graduada em estética</span>
+            </div>
+            <div>
+              <span class="hero-bio-stat-num">Enf.</span>
+              <span class="hero-bio-stat-label">Formação em enfermagem</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ORNAMENT -->
+<div class="ornament-divider">
+  <div class="line"></div>
+  <div class="dot"></div>
+  <div class="diamond"></div>
+  <div class="dot"></div>
+  <div class="line"></div>
+</div>
+
+<!-- POR QUE ESCOLHER -->
+<section class="white">
+  <div class="container">
+    <span class="section-label">O diferencial</span>
+    <h2 class="section-title">Por que escolher o <em>furo humanizado</em>?</h2>
+    <p class="section-body">O furo humanizado é muito diferente do procedimento em farmácias. É realizado por profissional de saúde, com técnica apropriada, cuidados individualizados e total respeito ao bebê.</p>
+    <ul class="pain-list">
+      <li class="pain-item">
+        <span class="pain-num">01</span>
+        <span class="pain-text">Técnicas de alívio da dor específicas para a idade do bebê, tornando o procedimento mais confortável e rápido</span>
+      </li>
+      <li class="pain-item">
+        <span class="pain-num">02</span>
+        <span class="pain-text">Medidas individualizadas para cada lóbulo, garantindo simetria e posicionamento correto</span>
+      </li>
+      <li class="pain-item">
+        <span class="pain-num">03</span>
+        <span class="pain-text">Ambiente seguro e preparado para receber seu bebê com todo conforto e higiene adequados</span>
+      </li>
+      <li class="pain-item">
+        <span class="pain-num">04</span>
+        <span class="pain-text">Materiais estéreis, descartáveis e joias hipoalergênicas de qualidade certificada</span>
+      </li>
+      <li class="pain-item">
+        <span class="pain-num">05</span>
+        <span class="pain-text">Acompanhamento completo no pós-furo, com orientações detalhadas de cuidados e suporte quando necessário</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROCEDIMENTO -->
+<section class="tinted">
+  <div class="container">
+    <span class="section-label">O procedimento</span>
+    <h2 class="section-title">Método humanizado:<br><em>seguro e confortável</em></h2>
+    <p class="section-body">Cada etapa é realizada com cuidado e atenção, priorizando a segurança do bebê e a tranquilidade dos pais.</p>
+    <div class="benefit-grid">
+      <div class="benefit-card">
+        <div class="benefit-num">15</div>
+        <span class="benefit-label">Dias de idade (mínimo)</span>
+        <p class="benefit-desc">Recomendamos após 15 dias de vida, quando o bebê já iniciou o calendário vacinal</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-num">✓</div>
+        <span class="benefit-label">Anestésico tópico</span>
+        <p class="benefit-desc">Sim, é utilizado para que o bebê não sinta incômodo ou dor durante o procedimento</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-num">100%</div>
+        <span class="benefit-label">Materiais estéreis</span>
+        <p class="benefit-desc">Todos os materiais são estéreis e descartáveis, seguindo protocolos rigorosos de biossegurança</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-num">6-8</div>
+        <span class="benefit-label">Semanas de cicatrização</span>
+        <p class="benefit-desc">Cicatrização completa em média de 6 a 8 semanas, com cuidados simples</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORNAMENT -->
+<div class="ornament-divider">
+  <div class="line"></div>
+  <div class="dot"></div>
+  <div class="diamond"></div>
+  <div class="dot"></div>
+  <div class="line"></div>
+</div>
+
+<!-- RESULTADOS -->
+<section class="white">
+  <div class="container">
+    <span class="section-label">Resultados reais</span>
+    <h2 class="section-title">Veja os <em>resultados</em><br>do furo humanizado</h2>
+    <p class="section-body">Cada procedimento é único e realizado com o máximo de cuidado, atenção e carinho.</p>
+    
+    <div class="results-carousel-container">
+      <div class="results-carousel-track" id="carouselTrack">
+        <div class="results-slide">
+          <img src="resultado_furo_1.jpg" alt="Resultado de furo humanizado em bebê - Foto 1">
+          <div class="results-slide-overlay">
+            <div class="results-slide-label">Resultado 1</div>
+            <div class="results-slide-title">Furo humanizado realizado com sucesso</div>
+          </div>
+        </div>
+        <div class="results-slide">
+          <img src="resultado_furo_2.jpg" alt="Resultado de furo humanizado em bebê - Foto 2">
+          <div class="results-slide-overlay">
+            <div class="results-slide-label">Resultado 2</div>
+            <div class="results-slide-title">Procedimento seguro e confortável</div>
+          </div>
+        </div>
+        <div class="results-slide">
+          <img src="resultado_furo_3.jpg" alt="Resultado de furo humanizado em bebê - Foto 3">
+          <div class="results-slide-overlay">
+            <div class="results-slide-label">Resultado 3</div>
+            <div class="results-slide-title">Técnica adequada e cuidadosa</div>
+          </div>
+        </div>
+        <div class="results-slide">
+          <img src="resultado_furo_4.jpg" alt="Resultado de furo humanizado em bebê - Foto 4">
+          <div class="results-slide-overlay">
+            <div class="results-slide-label">Resultado 4</div>
+            <div class="results-slide-title">Simetria e posicionamento perfeitos</div>
+          </div>
+        </div>
+        <div class="results-slide">
+          <img src="resultado_furo_5.jpg" alt="Resultado de furo humanizado em bebê - Foto 5">
+          <div class="results-slide-overlay">
+            <div class="results-slide-label">Resultado 5</div>
+            <div class="results-slide-title">Cicatrização tranquila e adequada</div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-nav prev" onclick="moveCarousel(-1)">‹</button>
+      <button class="carousel-nav next" onclick="moveCarousel(1)">›</button>
+      <div class="carousel-dots">
+        <button class="carousel-dot active" onclick="goToSlide(0)"></button>
+        <button class="carousel-dot" onclick="goToSlide(1)"></button>
+        <button class="carousel-dot" onclick="goToSlide(2)"></button>
+        <button class="carousel-dot" onclick="goToSlide(3)"></button>
+        <button class="carousel-dot" onclick="goToSlide(4)"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORNAMENT -->
+<div class="ornament-divider">
+  <div class="line"></div>
+  <div class="dot"></div>
+  <div class="diamond"></div>
+  <div class="dot"></div>
+  <div class="line"></div>
+</div>
+
+<!-- COMO FUNCIONA -->
+<section class="white">
+  <div class="container">
+    <span class="section-label">Passo a passo</span>
+    <h2 class="section-title">Como funciona<br><em>o atendimento</em></h2>
+    <p class="section-body">Do agendamento ao acompanhamento pós-furo, cada etapa foi pensada para oferecer segurança e tranquilidade.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-left">
+          <div class="step-circle">1</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h3>Agendamento e preparação</h3>
+          <p>Entre em contato pelo WhatsApp para agendar. Você pode escolher atendimento na clínica ou domiciliar (com taxa de deslocamento).</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-left">
+          <div class="step-circle">2</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h3>Acolhimento e avaliação</h3>
+          <p>Avaliação do bebê, explicação completa do procedimento e esclarecimento de todas as dúvidas dos pais.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-left">
+          <div class="step-circle">3</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h3>Marcação e anestesia</h3>
+          <p>Marcação cuidadosa para garantir simetria, seguida pela aplicação de anestésico tópico para conforto do bebê.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-left">
+          <div class="step-circle">4</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h3>Realização do furo</h3>
+          <p>Procedimento rápido e seguro, com técnica adequada e materiais estéreis, minimizando qualquer desconforto.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-left">
+          <div class="step-circle">5</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h3>Orientações de cuidados</h3>
+          <p>Instruções detalhadas sobre higienização, sinais de atenção e acompanhamento completo durante a cicatrização.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALORES -->
+<section class="tinted">
+  <div class="container">
+    <span class="section-label">Investimento</span>
+    <h2 class="section-title">Valores do <em>procedimento</em></h2>
+    <p class="section-body">Transparência total: sem surpresas, sem custos escondidos. Você escolhe a opção que melhor se encaixa.</p>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-title">Com joia própria</div>
+        <div class="pricing-value"><small>R$</small> 150</div>
+        <p class="pricing-desc">Você traz a joia (obrigatoriamente de ouro)</p>
+        <ul class="pricing-features">
+          <li>Procedimento completo com técnica humanizada</li>
+          <li>Materiais estéreis e descartáveis</li>
+          <li>Anestésico tópico incluído</li>
+          <li>Orientações de cuidados pós-furo</li>
+          <li>Acompanhamento durante cicatrização</li>
+        </ul>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Mais escolhido</div>
+        <div class="pricing-title">Com joia hipoalergênica</div>
+        <div class="pricing-value"><small>R$</small> 195</div>
+        <p class="pricing-desc">Joia hipoalergênica de qualidade inclusa</p>
+        <ul class="pricing-features">
+          <li>Tudo do pacote anterior, mais:</li>
+          <li>Joia hipoalergênica de qualidade</li>
+          <li>Garantia de material adequado para bebês</li>
+          <li>Certificação de procedência</li>
+          <li>Praticidade e segurança total</li>
+        </ul>
+      </div>
+    </div>
+    <p class="section-body" style="margin-top: 28px; font-size: 13px; font-style: italic;">
+      <strong>Atendimento domiciliar:</strong> Taxa de deslocamento de R$ 15 a R$ 30, conforme localidade.
+    </p>
+  </div>
+</section>
+
+<!-- ORNAMENT -->
+<div class="ornament-divider">
+  <div class="line"></div>
+  <div class="dot"></div>
+  <div class="diamond"></div>
+  <div class="dot"></div>
+  <div class="line"></div>
+</div>
+
+<!-- FAQ -->
+<section class="white">
+  <div class="container">
+    <span class="section-label">Dúvidas frequentes</span>
+    <h2 class="section-title">Perguntas<br><em>e respostas</em></h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-toggle" onclick="toggleFaq(this)">
+          Com quantos meses o bebê pode furar a orelha?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>Geralmente após 15 a 20 dias de vida, quando já iniciou o calendário vacinal. Realizamos uma avaliação individual em cada caso.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" onclick="toggleFaq(this)">
+          O procedimento dói muito no bebê?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>No método humanizado, utilizamos técnicas de alívio da dor para tornar o momento mais confortável e rápido. O bebê não sente desconforto significativo.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" onclick="toggleFaq(this)">
+          É usado anestésico?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>Sim! É utilizado anestésico tópico para que o bebê não sinta incômodo ou dor durante o procedimento.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" onclick="toggleFaq(this)">
+          O material é esterilizado?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>Sim. São utilizados materiais estéreis e descartáveis, seguindo protocolos rigorosos de biossegurança.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" onclick="toggleFaq(this)">
+          Pode dar infecção?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>O risco é baixo quando os cuidados são seguidos corretamente. É importante manter a higiene adequada conforme orientação profissional.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" onclick="toggleFaq(this)">
+          Como é feita a higienização após o furo?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>A limpeza é realizada com sabão neutro e soro fisiológico 2 vezes ao dia, conforme orientação detalhada que você receberá após o procedimento.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" onclick="toggleFaq(this)">
+          Precisa girar o brinco?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>Não é recomendado girar o brinco, pois pode causar irritação e atrapalhar a cicatrização.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" onclick="toggleFaq(this)">
+          O bebê pode tomar vacina após furar?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>Sim, não há contraindicação. Podemos organizar as datas para maior conforto do bebê.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" onclick="toggleFaq(this)">
+          Quando pode trocar o brinco?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>Após a cicatrização completa (6 a 8 semanas) e com orientação profissional.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-toggle" onclick="toggleFaq(this)">
+          Onde é realizado o procedimento?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-body">
+          <p>O procedimento pode ser realizado na clínica, em ambiente preparado e seguro, ou em sua casa mediante pagamento de taxa de deslocamento (R$ 15 a R$ 30, conforme localidade).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFORMAÇÕES -->
+<section class="tinted">
+  <div class="container">
+    <span class="section-label">Localização & contato</span>
+    <h2 class="section-title">Onde nos<br><em>encontrar</em></h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <span class="info-card-icon">📍</span>
+        <h3>Endereço</h3>
+        <address>
+          Quadra 1006 Sul<br>
+          Av. LO-23, Nº 3 — Sala 05<br>
+          <span class="info-strong">Palmas, TO</span>
+        </address>
+      </div>
+      <div class="info-card">
+        <span class="info-card-icon">🕐</span>
+        <h3>Horário de atendimento</h3>
+        <p>
+          <span class="info-strong">Seg – Sex</span> · 08:30 às 18:00<br>
+          <span class="info-strong">Sábado</span> · 08:30 às 12:00<br>
+          Domingo · Fechado
+        </p>
+      </div>
+      <div class="info-card">
+        <span class="info-card-icon">📱</span>
+        <h3>Contato</h3>
+        <p>
+          <a href="https://wa.me/5563992726110">(63) 99272-6110</a><br>
+          WhatsApp preferencial<br>
+          <a href="https://instagram.com/enf.tainabatista" target="_blank">@enf.tainabatista</a>
+        </p>
+      </div>
+      <div class="info-card">
+        <span class="info-card-icon">🏠</span>
+        <h3>Atendimento domiciliar</h3>
+        <p>
+          Disponível em Palmas<br>
+          Taxa de deslocamento<br>
+          <span class="info-strong">R$ 15 a R$ 30</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<div class="cta-final">
+  <div class="cta-final-ring"></div>
+  <div class="cta-final-inner">
+    <div class="cta-final-logo-circle">
+      <img src="logo_taina_batista_otimizada.jpg" alt="Tainá Batista Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+    </div>
+    <h2>Registre esse momento especial<br>com <em>segurança e carinho</em></h2>
+    <p>Agende o furo humanizado do seu bebê. Tainá acolhe sua família com todo cuidado que este momento merece.</p>
+    <a href="https://wa.me/5563992726110" class="btn-primary">Agendar pelo WhatsApp →</a>
+    <div class="cta-final-micro">
+      <span>Palmas, TO</span>
+      <span>Clínica ou domiciliar</span>
+      <span>A partir de R$ 150</span>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Tainá Batista</div>
+    <div class="footer-role">Enfermeira Esteta</div>
+    <p>
+      <a href="https://wa.me/5563992726110">(63) 99272-6110</a> &nbsp;·&nbsp;
+      <a href="https://instagram.com/enf.tainabatista" target="_blank">@enf.tainabatista</a>
+    </p>
+    <p>Quadra 1006 Sul, Av. LO-23, Nº 3 — Sala 05 · Palmas, TO</p>
+    <div class="footer-divider"></div>
+    <p class="footer-note">Os procedimentos apresentados são realizados por profissional habilitado, seguindo protocolos de biossegurança. As informações desta página têm caráter informativo e não substituem a avaliação profissional individual.</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/5563992726110" class="wa-float" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span>Falar no WhatsApp</span>
+</a>
+
+<script>
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// Carrossel de resultados
+let currentSlide = 0;
+const totalSlides = 5;
+
+function updateCarousel() {
+  const track = document.getElementById('carouselTrack');
+  const dots = document.querySelectorAll('.carousel-dot');
+  
+  if (track) {
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+  
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentSlide);
+  });
+}
+
+function moveCarousel(direction) {
+  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+  updateCarousel();
+}
+
+function goToSlide(index) {
+  currentSlide = index;
+  updateCarousel();
+}
+
+// Auto-play do carrossel
+let autoPlayInterval = setInterval(() => {
+  moveCarousel(1);
+}, 4500);
+
+// Pausar auto-play ao interagir
+document.addEventListener('DOMContentLoaded', () => {
+  const carouselContainer = document.querySelector('.results-carousel-container');
+  if (carouselContainer) {
+    carouselContainer.addEventListener('mouseenter', () => {
+      clearInterval(autoPlayInterval);
+    });
+    
+    carouselContainer.addEventListener('mouseleave', () => {
+      autoPlayInterval = setInterval(() => {
+        moveCarousel(1);
+      }, 4500);
+    });
+  }
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.benefit-card, .step, .pricing-card, .info-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(18px)';
+  el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
